@@ -1,0 +1,128 @@
+:root {
+  --primary: orange;
+  --secondary: orange;
+  --text: white;
+  --fa: skyblue;
+}
+
+@import url("https://fonts.googleapis.com/css?family=B612+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*tempary*/
+.navbar {
+  background-color: #333;
+}
+
+/*Navbar color Blacl*/
+/* .navbar-brand img {
+    height: 50px;
+    width: 50px;
+} */
+
+.logo-text-2 {
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.logo-text {
+  color: var(--text);
+  font-family: "B612 Mono", monospace;
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.fa {
+  color: var(--primary);
+  font-size: 30px;
+}
+
+.text {
+  font-size: 14px;
+  font-family: "B612 Mono", monospace;
+  font-weight: 100;
+  color: var(--text);
+}
+.image-about img {
+  height: 400px !important;
+  width: 500px;
+}
+
+#Navrbar {
+  background-color: var(--primary);
+}
+
+.navbar-nav li a {
+  color: black !important;
+  font-size: 15px;
+  text-transform: uppercase !important;
+  font-weight: 500;
+}
+
+/*Carousole*/
+.slider-item {
+  height: 100vh;
+}
+.carousel-inner {
+  height: 80vh !important;
+}
+
+/*Icon*/
+.heading-text {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Exo 2", sans-serif;
+}
+.heading-text {
+  font-family: "Exo 2", sans-serif;
+}
+.icon-header .fa {
+  color: var(--primary) !important;
+  position: absolute;
+  left: 40%;
+  top: -25px;
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px 20px;
+  text-align: center;
+}
+.media-body {
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+  height: 300px;
+  width: 275px;
+  position: relative;
+}
+
+.media-body > h3 {
+  color: var(--secondary) !important;
+  margin-top: 50px;
+  font-size: 23px;
+  font-family: sans-serif;
+}
+
+.media-body > p {
+  color: white;
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: "Exo 2", sans-serif;
+}
+.btn:hover {
+  background-color: lime;
+}
+.btn {
+  background-color: var(--primary);
+}
+.subheading {
+  color: var(--primary);
+  font-size: 18px;
+}
