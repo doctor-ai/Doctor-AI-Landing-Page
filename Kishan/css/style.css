@@ -1,8 +1,9 @@
 :root {
-  --primary: orange;
+  --primary: limegreen;
   --secondary: orange;
   --text: white;
   --fa: skyblue;
+  --Black: #333;
 }
 
 @import url("https://fonts.googleapis.com/css?family=B612+Mono&display=swap");
@@ -50,6 +51,7 @@
   font-weight: 100;
   color: var(--text);
 }
+
 .image-about img {
   height: 400px !important;
   width: 500px;
@@ -70,6 +72,7 @@
 .slider-item {
   height: 100vh;
 }
+
 .carousel-inner {
   height: 80vh !important;
 }
@@ -80,9 +83,11 @@
   margin-top: 50px;
   font-family: "Exo 2", sans-serif;
 }
+
 .heading-text {
   font-family: "Exo 2", sans-serif;
 }
+
 .icon-header .fa {
   color: var(--primary) !important;
   position: absolute;
@@ -93,6 +98,7 @@
   padding: 20px 20px;
   text-align: center;
 }
+
 .media-body {
   background-color: #333;
   color: white;
@@ -102,27 +108,68 @@
   position: relative;
 }
 
-.media-body > h3 {
+.media-body>h3 {
   color: var(--secondary) !important;
   margin-top: 50px;
   font-size: 23px;
   font-family: sans-serif;
 }
 
-.media-body > p {
+.media-body>p {
   color: white;
   margin-top: 20px;
   font-weight: 500;
   line-height: 30px;
   font-family: "Exo 2", sans-serif;
 }
+
 .btn:hover {
   background-color: lime;
 }
+
 .btn {
   background-color: var(--primary);
 }
+
 .subheading {
   color: var(--primary);
-  font-size: 18px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+/*Drop Down Menu*/
+.ftco-departments a {
+  color: var(--Black);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  height: 60px;
+
+}
+
+.tab-pane {
+
+  font-family: sans-serif;
+}
+
+.ftco-departments {
+  background-color: #d3d3d3;
+}
+
+.tap-images {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  top: -120px;
+}
+
+.tap-images img {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  height: 300px;
+  width: 400px;
 }
