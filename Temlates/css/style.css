@@ -1,0 +1,412 @@
+:root {
+    --navbar: #fff;
+    --doctorAi: #1e90ff;
+    --underline: #32CD32;
+    --services: #21e43c;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    background-color: var(--navbar);
+}
+
+.brand-logo img {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    box-shadow: none;
+    margin-left: 30px;
+}
+
+#nav-link li a:hover {
+    background-color: #fff;
+}
+
+#nav-link li a {
+    display: inline-block;
+}
+
+#nav-link li a:after {
+    display: block;
+    content: '';
+    margin-top: -15px;
+    border-bottom: solid 3px var(--underline);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+#nav-link li a:hover:after {
+    transform: scaleX(1);
+}
+
+#nav-link a {
+    color: var(--doctorAi);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    margin: 0px 20px;
+
+}
+
+.brand-logo span {
+    color: var(--doctorAi);
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    top: -15px;
+}
+
+.text-caption {
+    color: #ffffff;
+    font-family: serif;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.text-caption-two {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 80px;
+}
+
+.slider .indicators {
+    position: relative;
+    top: -40px;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.image-walk img {
+    margin: 10px 1px;
+    height: 100%;
+    width: 100%;
+}
+
+.text-lg {
+    color: white;
+    font-family: serif;
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+/*Media */
+
+@media(max-width:600px) {
+    .image-walk img {
+        height: 70% !important;
+        width: 70% !important;
+        margin-top: -200px !important;
+        margin: 0px 50px;
+    }
+
+    .slider .indicators {
+
+        top: -40px;
+        z-index: 5;
+    }
+
+    .sidenav {
+        opacity: 9999;
+    }
+
+    .text-caption {
+        font-size: 30px;
+    }
+
+    .text-caption-two {
+        color: white;
+        font-size: 30px;
+        font-family: 'Libre Baskerville', serif;
+        margin-top: 80px;
+    }
+
+    .slider ul {
+        height: 400px !important;
+    }
+
+    .slides li img {
+        height: 100% !important;
+    }
+
+    .text-head {
+        font-size: 0px !important;
+    }
+
+    .services {
+        width: 400px !important;
+        margin: 10px auto !important;
+    }
+
+    .image-cellphone img {
+        height: 300px !important;
+        margin: 0px auto;
+        margin-top: 80px !important;
+    }
+
+    .review-text {
+        color: gray !important;
+        position: absolute;
+        top: 170px;
+        text-align: left;
+        left: 20px;
+        width: 380px !important;
+        font-family: serif;
+        font-size: 20px !important;
+
+    }
+
+    .client-feedback h1 {
+        font-size: 35px !important;
+        color: #2c2c2c;
+        font-weight: bold;
+        font-family: serif;
+        margin-bottom: 5px !important;
+    }
+
+    .feedback-p {
+        color: #333;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+
+
+}
+
+
+@media(max-width:900px) {
+    .carousel {
+        min-height: 500px;
+    }
+
+    .image-walk img {
+        height: 80%;
+        width: 70%;
+    }
+
+    .text-paragraph {
+        opacity: 0.9;
+        color: gray;
+        font-size: 12px !important;
+    }
+
+    .slider .indicators {
+
+        top: -40px;
+        z-index: 5;
+    }
+
+    .sidenav {
+        opacity: 9999;
+    }
+
+    .border {
+        background-color: var(--underline);
+        position: relative;
+        top: -20px;
+        width: 200px;
+        height: 2px;
+        margin: 0px auto;
+    }
+
+    .services {
+        width: 90% !important;
+        margin: 0px auto;
+    }
+
+    .image-cellphone img {
+        height: 80% !important;
+        width: 70% !important;
+
+    }
+
+    .review-text {
+        color: gray !important;
+        position: absolute;
+        top: 170px;
+        text-align: left;
+        left: 20px;
+        width: 380px !important;
+        font-family: serif;
+        font-size: 20px !important;
+
+    }
+
+
+
+}
+
+.text-head {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 90px !important;
+    padding-bottom: 10px;
+}
+
+.border {
+    background-color: var(--underline);
+    position: relative;
+    top: -20px;
+    width: 280px;
+    height: 3px;
+    margin: 0px auto;
+}
+
+.text-paragraph {
+    color: gray;
+    font-family: serif;
+    font-size: 25px !important;
+}
+
+.services-text h1 {
+    color: #2c2c2c;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.service-border {
+    background-color: var(--underline);
+    position: relative;
+    top: -20px;
+    width: 250px;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.services-section {
+    margin: 10px 0px;
+    height: 403px;
+    padding: 10px 30px;
+    border: 2px solid #D3D3D3;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.services {
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+.services-section .fas {
+
+    border: 2px solid var(--underline) !important;
+    border-radius: 50%;
+    padding: 15px 15px;
+}
+
+.services-section .fas {
+    border-color: var(--underline) !important;
+}
+
+.services-section h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.services-section p {
+    font-family: Baskerville;
+    font-size: 20px;
+    justify-items: auto;
+}
+
+.services-section p:hover {
+    color: #fff;
+}
+
+.services-section:hover,
+.services-section h4:hover {
+    background-color: var(--services);
+    color: #fff;
+}
+
+/*Review*/
+.carousel-item {
+    position: relative;
+}
+
+.text-warp {
+    color: #2c2c2c;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-family: serif;
+
+}
+
+.icons {
+    text-align: left;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+
+.review-text {
+    color: gray !important;
+    position: absolute;
+    top: 170px;
+    text-align: left;
+    left: 30px;
+    width: 500px;
+    font-family: serif;
+    font-size: 20px !important;
+
+
+}
+
+.image-cellphone img {
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 80px
+}
+
+.client-feedback h1 {
+    font-size: 45px;
+    color: #2c2c2c;
+    font-weight: bold;
+    font-family: serif;
+    margin-bottom: 5px !important;
+}
+
+.feedback-p {
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.carousel .indicators {
+    background-color: white !important;
+    border-color: green;
+    position: absolute;
+    top: 300px;
+}
+
+.footer {
+    text-align: center;
+    color: lightslategray;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.footer .fas {
+    color: red;
+}
